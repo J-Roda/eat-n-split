@@ -1,10 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import Button from "./components/Button";
 import FormAddFriend from "./components/FormAddFriend";
 import FormSplitBill from "./components/FormSplitBill";
 import ListOfFriends from "./components/ListOfFriends";
-import viteLogo from "/vite.svg";
 const initialFriends = [
     {
         id: 118836,
@@ -56,6 +54,7 @@ function App() {
                     setFriends={setFriends}
                     selectedFriend={selectedFriend}
                     setSelectedFriend={setSelectedFriend}
+                    key={selectedFriend.id}
                 />
             )}
         </div>
